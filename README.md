@@ -15,7 +15,15 @@ Energy Storage Systems are the key element to overcome it. Energy Storage system
 
 # Why it is important?
 
-The energy storage system consists of dozens of thousands of cells. Failure of one cell can lead to catastrophic results and a hazardous situation on site. On average, every month, only in Korea two sites is completely destroyed by electrical fire (2018 year)
+The energy storage system consists of dozens of thousands of cells. Failure of one cell can lead to catastrophic results and a hazardous situation on site. On average, every month, only in Korea two sites is completely destroyed by electrical fire (2018-2019 years) 
+
+Timeline 2018-2019:
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/hazard.png' width=600/>
+<br>
+
+Source: 
+Results of Investigation on EESS Fire Accident in Korea 
+IEC TC 120 WG4 Convenor Misung Kim, 2018
 
 
 
