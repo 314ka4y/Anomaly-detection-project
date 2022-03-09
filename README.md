@@ -144,13 +144,13 @@ Model 2 anomalies:
 
 <img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/model2_result.png' width=300/>
 
-###  Model I used was a custom model based on data normality assumption for voltage readings distribution and additional filter based on status of the system.
+###  Model I used was a custom model based on data normality assumption for voltage readings distribution and additional filter based on system's status.
 
 Model 3 anomalies:
 
 <img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/model3_anomaly.png' width=600/>
 
-##### Result: 1/240 of cells were marked positive 
+##### Result: 1/240 of cells were marked positive.
 
 <img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/model3_result.png' width=300/>
 
@@ -160,46 +160,37 @@ Model 3 anomalies:
 #  Results
 
 
-Below is an image showing the confusion matrix:
-<img src='https://github.com/314ka4y/Image_classification/blob/main/img/CM_Pre-trained%20Augmented%20CNN%20224x224%20frozen%20layer%20MobileNetV2.png'/>
+Below is an image showing the result of model 3 on test data:
+
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/test_result.png' width=300/>
 
 
-After changing decision boundary we managed to improve our results:
+100% recall
 
-97.69% recall
+99.75% accuracy
 
-95.19% accuracy
+Below are plots of anomalies in one of the clusters(cluster 2):
 
-The last step was to identify boundries when we have the most model errors. We can highlight these cases and substract cases between these limits. They can be proceesed by doctors in the hospital during appointment, for better results. 
-In this case our finall result will be:
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/Cluster_2_voltage_anomaly.png' width=600/>
 
-99.92% recall
-
-97.26% accuracy
-
-6.41% Suspicious cases
-
-Confusion matrix:
-
-<img src='https://github.com/314ka4y/Image_classification/blob/main/img/CM_Pre-trained%20Augmented%20CNN%20200x200%20frozen%20layer%20VGG16.png'/>
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/Cluster_2_temperature_anomaly.png' width=600/>
 
 
 # Conclusion
-Due to the randomness of training results may vary when the model runs on a local machine.
 This type of methodology can be extremely useful in the identification of infections and abnormalities in medical imaging (not just x-ray but MRI, CT's, etc..). The use of machine learning techniques has the potential to be extremely useful in the medical field, but it is very dependable on the quality of input training data. Machine learning algorithms trained on incorrect data might give false results in the future. 
 
 
 # Further Questions
-See the full analysis in the [Jupyter Notebook](https://github.com/314ka4y/Image_classification/blob/main/Pneumonia_image_recognition.ipynb) or review [this presentation](https://github.com/314ka4y/Image_classification/blob/main/Project_presentation.pdf)
+See the full analysis in the [Jupyter Notebook](hhttps://github.com/314ka4y/Anomaly-detection-project/blob/main/Anomaly_detection.ipynb) or review [this presentation](https://github.com/314ka4y/Image_classification/blob/main/Project_presentation.pdf)
 
 
 # Repository Structure
 ```
-├── data                # contains original datasets and saved models
-│   ├── explore         # data for model tuning 
-│   ├── raw             # actual project data
-│   ├── models          # Saved tensorflow model
-├── img                 # Result Images in this project
+├── data                     # contains original datasets and saved models
+│   ├── explore              # small dataset for model explorations
+│   ├── Test_data            # testing dataset
+│   ├── report               # Doc version of report and images
+│   ├── img                  # Images used in readme with keyfindings
 ├── README.md
-├── Pneumonia_image_recognition.ipynb
+├── Anomaly_detection.ipynb
 └── Project_presentation.pdf
