@@ -73,32 +73,44 @@ Accuracy - how well we can predict TP and TN. These are general metrics that wil
 While it is impossible to say that the actual identified case will lead to Hazard, it is crucial to find and mark cells for further investigation of service engineers.
 
 # Data Understanding
-The data used for this project was sourced from a dataset:
+Sources of data:
 
-1) Chest X-Ray Images. Year: 2018 Kermany, Daniel; Zhang, Kang; Goldbaum, Michael (2018), "Large Dataset of Labeled Optical Coherence Tomography (OCT) and Chest X-Ray Images," Mendeley Data, V3, DOI: 10.17632/rscbjbr9sj.3
+1) Explore data folder: 2 cluster systems with several hours of data readings.
 
-https://data.mendeley.com/datasets/rscbjbr9sj/3
+2) Test data: 5 cluster systems consist of 1200 voltage sensors, 1200 temperature sensors, and 5 current sensors.
 
-##### The dataset contains the following images:
+Test data covers the period - 8h on the 10-11 June 2021, with temperature readings every 30 seconds voltage readings every 10 seconds.
 
-The system consists of 5 clusters:
+Data was artificially modified to add anomaly cells.
 
-Each cluster: 
+##### The dataset structure:
 
-- 240 temperature sensors
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/folder_structure.png' width=600/>
 
-- 240 voltage sensors
+Inside the data folder, we have the following structure:
+"cluster_n" - number of the cluster for N cluster system
 
-- 1 current senor
+Inside each cluster folder:
 
-- data readings: every 10 sec
+- temperature 
 
+- total state
+
+- voltage
+
+Folders that contain reading for each sensor based on sensor type.
+
+Sensor readings are provided in CSV files; each file contains reading for 1 hour with different discrepancies depending on sensor type.
 
 Overall: 
 2405 sensors with > 10 000 readings for each sensor
-
-
 Some data was artificially modified to increase the number of anomaly sensors.
+
+
+
+
+
+
 
 # Modeling
 
