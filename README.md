@@ -106,13 +106,24 @@ Overall:
 2405 sensors with > 10 000 readings for each sensor
 Some data was artificially modified to increase the number of anomaly sensors.
 
-
-
-
-
-
-
 # Modeling
+
+We forecast prediction boundaries for sensor readings. The first is voltage sensor readings.
+Voltage sensor readings plot:
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/Voltage_sensors.png' width=400/>
+
+Voltage sensors Standard deviation change over the time:
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/voltage_std.png' width=400/>
+
+First model I used was SARIMAX. 
+
+I made prediction to define boundaries for mean value of voltage. Resulted decision boundaries:
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/SARIMA_bond.png' width=400/>
+
+Top and bottom bondaries:
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/SARIMA_bond2.png' width=400/>
+
+
 
 
 #  Results
