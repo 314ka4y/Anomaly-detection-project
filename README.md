@@ -109,19 +109,50 @@ Some data was artificially modified to increase the number of anomaly sensors.
 # Modeling
 
 We forecast prediction boundaries for sensor readings. The first is voltage sensor readings.
+
 Voltage sensor readings plot:
-<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/Voltage_sensors.png' width=400/>
+
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/Voltage_sensors.png' width=600/>
 
 Voltage sensors Standard deviation change over the time:
-<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/voltage_std.png' width=400/>
 
-First model I used was SARIMAX. 
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/voltage_std.png' width=600/>
 
-I made prediction to define boundaries for mean value of voltage. Resulted decision boundaries:
-<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/SARIMA_bond.png' width=400/>
+### First model I used was SARIMAX. 
+
+I predicted to define boundaries for the mean value of voltage. Resulted decision boundaries:
+
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/SARIMA_bond.png' width=600/>
 
 Top and bottom bondaries:
-<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/SARIMA_bond2.png' width=400/>
+
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/SARIMA_bond2.png' width=600/>
+
+
+##### Result: 240/240 of cells were marked positive 
+
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/model1_result.png' width=300/>
+
+
+### Second model I used was a custom model based on data normality assumption for voltage readings distribution.
+
+Model 2 anomalies:
+
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/model2_anomaly.png' width=600/>
+
+##### Result: 7/240 of cells were marked positive 
+
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/model2_result.png' width=300/>
+
+###  Model I used was a custom model based on data normality assumption for voltage readings distribution and additional filter based on status of the system.
+
+Model 3 anomalies:
+
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/model3_anomaly.png' width=600/>
+
+##### Result: 1/240 of cells were marked positive 
+
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/model3_result.png' width=300/>
 
 
 
