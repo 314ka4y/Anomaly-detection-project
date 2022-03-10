@@ -167,21 +167,22 @@ Below is an image showing the result of model 3 on test data:
 
 100% recall
 
-99.75% accuracy
+99.5% accuracy
 
 Below are plots of anomalies in one of the clusters(cluster 2):
 
-<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/Cluster_2_voltage_anomaly.png' width=600/>
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/Cluster_2_voltage_anomaly.png' width=900/>
 
-<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/Cluster_2_temperature_anomaly.png' width=600/>
+<img src='https://github.com/314ka4y/Anomaly-detection-project/blob/main/img/Cluster_2_temperature_anomaly.png' width=900/>
 
 
 # Conclusion
-This type of methodology can be extremely useful in the identification of infections and abnormalities in medical imaging (not just x-ray but MRI, CT's, etc..). The use of machine learning techniques has the potential to be extremely useful in the medical field, but it is very dependable on the quality of input training data. Machine learning algorithms trained on incorrect data might give false results in the future. 
+This type of methodology can be extremely useful in identifying anomalies in cells for further analysis. When it is used with 10 000+ cells, it allows the engineer to focus on possible problems and address them accordingly. Implementation of anomaly detection systems should allow Energy System Manufacturers to improve the safety of their systems. 
+
 
 
 # Further Questions
-See the full analysis in the [Jupyter Notebook](hhttps://github.com/314ka4y/Anomaly-detection-project/blob/main/Anomaly_detection.ipynb) or review [this presentation](https://github.com/314ka4y/Image_classification/blob/main/Project_presentation.pdf)
+See the full analysis in the [Jupyter Notebook](hhttps://github.com/314ka4y/Anomaly-detection-project/blob/main/Anomaly_detection.ipynb) or review [this presentation](https://github.com/314ka4y/Anomaly-detection-project/blob/main/Project_presentation.pdf)
 
 
 # Repository Structure
